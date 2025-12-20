@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Welcome to Cafinity</title>
+        <style>
+ul {
+     gap: 20px;
+    padding: 0%;
+    justify-content: space-between;
+    margin: 0; 
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color:#f2d9b4;
+   max-width: 600px;    /* limits overall navbar width*/
+  height: 40px;          /* reduces navbar height */
+  border-radius: 10px;
+} 
+ul a li {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b2e2e;
+}
+ul a li:hover {
+  background: white;
+  color: black;
+  transform: translateY(-2px) scale(1.05);
+/*  Moves the element along the Y-axis (up/down).
+-2px means the element shifts 2 pixels upward.
+If it was +2px, it would move downward. */
+}
+a{
+    color: rgb(43, 20, 2);
+    text-decoration: none;
+} 
+/* video{
+    border-radius: 20px;
+    margin-left: 10px;
+} */
+     .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.left .text {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+}
+.videoad{
+  background-color: #AF7E50;
+  flex: auto;
+}
+
+.left .text h2 {
+  font-size: 28px;
+  color: #3b1f0d;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.left .text p {
+  font-size: 16px;
+  text-align: center;
+  color: wheat;
+}
+
+.left video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+  border-radius: 0;
+}
+
+
+ .slideshow-container {
+    position: relative; 
+    /* relative:- Hey, this box will stay where it normally is, but if someone inside (like a child element)
+     wants to move around, they can use me as their reference point.”  */
+    width: 100%;
+    max-width: 540px;
+    margin: 20px 0 20px 25px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* float: left; */
+  }
+
+  .slideshow-container img {
+    position: absolute; 
+    /*abosulte:- I can move freely inside my parent box, and I won’t affect other elements around me */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    /* Starts invisible (opacity: 0). */
+    animation: fadeAnimation 12s infinite; 
+    /* Runs a CSS animation called fadeAnimation which lasts 12s and repeats forever (infinite).  */
+    border-radius: 20px;
+  }
+
+  /* Each image fades in at a different time */
+   .slideshow-container img:nth-child(1) { animation-delay: 0s; } /*nth child means selecting image from the parent box */
+  .slideshow-container img:nth-child(2) { animation-delay: 4s; }
+  .slideshow-container img:nth-child(3) { animation-delay: 8s; }
+
+  @keyframes fadeAnimation {
+    /* @keyframes is like the script or blueprint for your animation —
+it defines how the animation should behave over time. */
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+   /* >> This defines how the opacity changes over time:
+From 0% to 10%, the image fades in.
+Between 10% and 30%, it stays fully visible.
+Between 30% and 40%, it fades out.
+From 40% to 100%, it stays invisible until its next turn. */
+
+  }
+  .hero-section {
+  display: flex;
+  flex-direction: column; /* vertical layout*/ 
+  align-items: flex-start;
+} 
+.content{
+    /* display: flex; */
+    flex-direction: column;
+  margin-top: 0.01rem;
+}
+.content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  /* height: 30%; */
+ /* padding-top: 30px;  gap from top of page to starting sentence */
+  color: rgb(60, 1, 1);
+  margin-bottom: 1rem;
+  /*padding-left: 20px; gap from starting sentence or button */
+} 
+
+ .buttons {
+  padding-top: 20px; /* gap betn text nd button*/
+  padding-left: 20px; /* gap from starting sentence or button*/
+  /* gap: 1rem; */
+}
+.btnnn {
+  text-decoration: none;
+  background-color: #4B2E05;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 45px;
+  margin-right: 20px;
+  /* height: 50%; */
+} 
+.btnnn:hover {
+ background-color: bisque;
+ color: rgb(63, 3, 3);
+}
+        </style>
+    </head>
+    <body>
+        <div class="bg-section" style="background-image: url('images/v.png');"> 
+            <header>
+                <a href="#" class="account-icon">
+                    <img src="images/prof.png" alt="Profile">
+                </a>
+                <div class="search-icon">
+                    <img src="images/searchicon.png" alt="Search">
+                </div>
+                <div class="search"></div>
+                <a href="index.html"><span class="logo">Caffinity
+                    <span class="emoji">🧋🤎</span>
+                    <span class="tagline">:- Coffees and more</span></span></a>
+            </header>
+            <nav>
+                <ul>
+                    <a href="pages/menu/menu.html"><li>Menu</li></a>
+                    <a href="pages/auth/login.html"><li>Sign in</li></a>
+                    <a href="pages/auth/registration.html"><li>Join now</li></a>
+                    <a href="pages/auth/feedback.html"><li>Testimonials</li></a>
+                    <a href="pages/info/contactus.html"><li>Contact us</li></a>
+                </ul>
+            </nav>
+           
+                  <div class="hero-section">
+
+  <div class="slideshow-container">
+    <img src="./images/animation2.png" alt="Coffee Cup">
+    <img src="./images/ani1.png">
+    <img src="./images/ani3.png" alt="Coffee Machine">
+  </div>
+
+  <div class="content">
+    <h1> <i> <b> Elevate your everyday brew....</b></i></h1>
+    <div class="buttons">
+      <a href="pages/order/Ordernow.html" class="btnnn">Order now</a>
+      <a href="pages/info/Aboutus.html" class="btnnn">About us</a>
+  </div>
+</div> </div>
+        
+
+                  <div class="videoad">
+  <div class="left">
+  <div class="text">
+    <h2>Where Coffee Becomes Art</h2>
+    <p>
+     Our Signature Coffee Design embodies the perfect blend of art and aroma — a handcrafted
+      masterpiece that reflects our passion for coffee. Each cup is carefully brewed and styled
+       with precision, from the rich crema on top to the mesmerizing swirl of latte art that 
+       defines our signature touch. It’s not just coffee; it’s a visual and sensory experience that
+        celebrates creativity, warmth, and craftsmanship. Every design tells a story — of beans
+         sourced with care, brewed with love, and served with pride to make your every sip truly 
+         unforgettable.
+         Our Signature Coffee Design is more than just a cup of coffee — it’s a work of art 
+         crafted with passion and precision. Each creation is carefully designed by skilled 
+         baristas who treat every pour as a canvas, turning rich espresso and creamy milk into 
+         stunning visual masterpieces. Inspired by the aroma, texture, and soul of every blend,
+          our designs blend creativity with craftsmanship — from delicate hearts to elegant 
+          rosettas that capture the beauty of coffee culture. Using only the finest beans and the
+           freshest milk, we ensure every cup offers both aesthetic perfection and exceptional
+            flavor. Consistency and care define our process, allowing every swirl and layer to be 
+            flawlessly balanced. Each signature design is not only a treat for your taste buds but 
+            also an Instagram-worthy moment that reflects warmth, artistry, and individuality — 
+            making your coffee experience as unique and memorable as you are.
+    </p>
+  </div>
+  <div class="media">
+    <video autoplay muted loop playsinline>
+      <!-- <source src="images\coffeevid3.mp4" type="video/mp4"> -->
+      <source src="./images/coffeevid3.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+        <div class="left" style="flex-direction: row-reverse;">
+            <div class="text">
+                <h2>Where Technique Meets Taste</h2>
+                <p>
+                Perfect Coffee Making Techniques are at the heart of every exceptional brew we serve.
+                 From selecting premium, freshly roasted beans to mastering the right grind size and 
+                 brewing temperature, every step is done with precision and care. Our baristas follow
+                  time-tested methods combined with modern innovation to extract the richest flavors 
+                  and aromas. Whether it’s the slow pour-over, the bold espresso, or the creamy 
+                  cappuccino, each cup is crafted to perfection — ensuring balance, depth, and a 
+                  taste that awakens your senses with every sip.
+                Perfect Coffee Making Techniques are a harmonious blend of science, skill, and soul
+                 — the foundation of every unforgettable cup we brew. It begins with selecting
+                  freshly roasted beans, chosen for their aroma, flavor notes, and origin. Every 
+                  detail matters — from the precise grind size to the ideal water temperature and
+                   brewing time. Our baristas master the art of extraction, ensuring that every drop
+                    captures the bean’s full essence without bitterness or burn. We embrace both 
+                    traditional and modern methods — from the slow, meditative pour-over to the bold
+                     precision of espresso machines — to bring out the best in every roast. Even the
+                      smallest factors, like water purity, milk texture, and brewing equipment, are
+                       carefully maintained to achieve consistent excellence. The result is not just coffee,
+                        but a carefully balanced experience of aroma, flavor, and texture — where every sip tells 
+                        the story of perfection brewed with passion.</p>
+            </div>
+            <div class="media">
+                <video autoplay muted loop playsinline>
+                    <source src="./images/coffeevid4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>  
+        <div class="left">
+  <div class="text">
+    <h2>Pure Beans, Perfect Brew</h2>
+    <p>
+    The Coffee Beans We Use are the heart and soul of every cup we serve — carefully sourced, 
+    ethically grown, and handled with the utmost care. We select only premium-quality beans from
+     trusted farms known for their sustainable and hygienic cultivation practices. Each batch is
+      freshly roasted to preserve its natural aroma, flavor, and richness, ensuring that every sip 
+      bursts with freshness and depth. From storage to brewing, we maintain strict hygiene standards
+       — clean equipment, sanitized surfaces, and temperature-controlled environments — so that
+        your coffee remains pure and safe. Our beans are never exposed to moisture or contamination,
+         guaranteeing the perfect balance of taste and health. Every cup is a result of precision,
+          purity, and passion — because we believe that truly great coffee starts with the finest 
+          beans and the cleanest hands.The Coffee Beans We Use are the heart and soul of every cup 
+          we serve — carefully sourced, ethically grown, and handled with the utmost care. We 
+          select only premium-quality beans from trusted farms known for their sustainable and 
+          hygienic cultivation practices. Each batch is freshly roasted to preserve its natural 
+          aroma, flavor, and richness, ensuring that every sip bursts with freshness and depth. 
+          From storage to brewing, we maintain strict hygiene standards — clean equipment, 
+          sanitized surfaces, and temperature-controlled environments — so that your coffee remains
+           pure and safe. Our beans are never exposed to moisture or contamination, guaranteeing
+            the perfect balance of taste and health. Every cup is a result of precision, purity,
+             and passion — because we believe that truly great coffee starts with the finest beans 
+             and the cleanest hands.
+    </p>
+
+
+  </div>
+  <div class="media">
+    <video autoplay muted loop playsinline>
+      <source src="images\coffeevid5.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+<footer>
+  <div class="footer-columns">
+
+    <div class="footer-col">
+      <h3>About Us</h3>
+     
+            <a href="pages/info/Aboutus.html">Our Story</a><br>
+            <a href="pages/info/Aboutus.html">Our Coffee</a><br>
+            <a href="pages/info/Aboutus.html">Community</a><br>
+            <a href="pages/info/Aboutus.html">Customer Support</a><br>
+            <a href="pages/info/Aboutus.html">Contact Us</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Careers</h3>
+     
+      <a href="#">Work Culture</a><br>
+        <a href="#">Join Our Team</a><br>
+        <a href="#">Internship Program</a><br>
+        <a href="#">Café Roles</a><br>
+        <a href="#">Corporate Roles</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Social Impact</h3>
+     <a href="#">Sustainability</a><br>
+        <a href="#">Ethical Sourcing</a><br>
+        <a href="#">Community Initiatives</a><br>
+        <a href="#">Environmental Responsibility</a><br>
+        <a href="#">Diversity & Inclusion</a><br>
+    </div>
+    <div class="footer-col">
+      <h3>For Business Partners</h3>
+        <a href="#">Wholesale Coffee</a><br>
+            <a href="#">Supplier Info</a><br>
+            <a href="#">Franchise Opportunities</a><br>
+            <a href="#">Corporate Orders</a><br>
+            <a href="#">Business Partnerships</a><br>
+    </div>
+    <div class="footer-col">
+      <h3>Order & Pick Up</h3>
+      <a href="#">Order Online</a><br>
+            <a href="#">Café Pickup</a><br>
+            <a href="#">Delivery Options</a><br>
+            <a href="#">Find a Store</a><br>
+            <a href="#">Gift Cards</a><br>
+    </div>
+  </div>
+  <hr>    
+                     <p>© 2025 Coffee Lovers Café | Brewed with ❤️ for coffee lovers</p>
+    </footer>
+    </body>
+</html>

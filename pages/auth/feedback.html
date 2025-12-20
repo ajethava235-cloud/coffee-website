@@ -1,0 +1,230 @@
+<html>
+    <head>
+     <link rel="stylesheet" href="../../css/style.css">
+        <title> Welcome to Cafinity</title>
+        <style>
+            h2{
+                text-decoration: solid;
+                text-transform: capitalize;
+                padding-left: 6%;
+            }
+            textarea{
+                height: 80px;
+                width: 80%;
+                background-color: rgb(244, 216, 182);
+                color: black;
+            }
+           ul {
+     gap: 20px;
+    padding: 0%;
+    justify-content: space-between;
+    margin: 0; 
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color:#f2d9b4;
+   max-width: 600px;    /* limits overall navbar width*/
+  height: 40px;          /* reduces navbar height */
+  border-radius: 10px;
+} 
+ul a li {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b2e2e;
+}
+ul a li:hover {
+  background: white;
+  color: black;
+  transform: translateY(-2px) scale(1.05);
+/*  Moves the element along the Y-axis (up/down).
+-2px means the element shifts 2 pixels upward.
+If it was +2px, it would move downward. */
+}
+a{
+    color: rgb(43, 20, 2);
+    text-decoration: none;
+} 
+ input[type="submit"] {
+  width: 50%;
+  margin: 20px auto 0 auto;
+  display: block; /* Center the button */
+  background-color: #b78245a5;
+  /* background: linear-gradient(90deg, #e4bc8d 0%, #7d572d 100%);  */
+  /*0deg = gradient goes top to bottom. 90deg = gradient goes left to right.*/
+
+ /* #e4bc8d 0% → Starting color (#e4bc8d, a light beige/tan shade).
+0% means it starts at the very left edge.
+
+#7d572d 100% → Ending color (#7d572d, a dark brown shade).
+100% means it finishes at the very right edge. */
+  color: black;
+  border-radius: 25px;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}
+input[type="submit"]:hover {
+  background: linear-gradient(90deg, #7d572d 0%, #e4bc8d 100%);
+  color: #4b2e2e;
+  transform: translateY(-2px) scale(1.03);
+}
+        </style>  
+         </head>
+    <body>
+        <div class="backg"> 
+            <header>
+                <a href="../../index.html"><span class="logo">Caffinity 
+                <span class="emoji">🧋🤎
+                <span class="tagline">:- Coffees and more</span></span></span></a>
+                <a href="../account/myaccount.html" class="account-icon">
+                  <img src="../../images/prof.png" alt="Profile">
+                </a>
+                <a href="#" class="search-icon">
+                  <img src="../../images/searchicon.png" alt="Search">
+                </a>
+            </header>
+            <div class="card">
+                <nav>
+                <ul>
+                    <a href="../menu/menu.html"><li>Menu</li></a>
+                     <a href="login.html"><li>Sign in</li></a>
+                     <a href="registration.html"><li>Join now</li></a>
+                     <a href="feedback.html"><li id="Unique_page">Testimonials</li></a>
+                     <a href="../info/contactus.html"><li>Contact us</li></a>
+                     </ul>
+            </nav> <br><br>
+             <div class="form-container">
+              <form id="myform">
+                <h2  style="background-color:#e4bc8d; border-radius: 90px;"> We'd Love Your Feedback!</h2>
+                <label> <h3>Rate Us: </h3></label>
+<input type="radio" name="rating" value="1"> 1⭐ <br>
+<input type="radio" name="rating" value="2"> 2⭐⭐<br>
+<input type="radio" name="rating" value="3"> 3⭐⭐⭐<br>
+<input type="radio" name="rating" value="4"> 4⭐⭐⭐⭐<br>
+<input type="radio" name="rating" value="5"> 5⭐⭐⭐⭐⭐ <br>
+<div id="feedback_e" style="color: red;font-weight: bold;"></div>
+
+ 
+<label><h3>Tell us what you loved, or what we can do better! </h3></label>
+<textarea placeholder="Write your feedback here..." id="texta" name="texta"></textarea>
+<div id="texta_e" style="color: red;font-weight: bold;"></div> 
+
+<br>
+<label><h3>What did you like the most? </h3></label>
+<label><input type="checkbox"> Coffee Quality</label><br>
+<label><input type="checkbox"> Staff Service</label><br>
+<label><input type="checkbox"> Delivery Service</label><br>
+<label><input type="checkbox"> Cleanliness</label><br>
+<div id="like_e" style="color: red;font-weight: bold;"></div><br>
+
+
+  <input type="submit" value="feedback" class="btn">
+              </form>
+             </div>
+<br><br><br><br>
+
+<footer>
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <a href="../info/Aboutus.html">Our Story</a><br>
+      <a href="pages/info/Aboutus.html">Our Coffee</a><br>
+      <a href="pages/info/Aboutus.html">Community</a><br>
+      <a href="pages/info/Aboutus.html">Customer Support</a><br>
+      <a href="pages/info/Aboutus.html">Contact Us</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="#">Work Culture</a><br>
+      <a href="#">Join Our Team</a><br>
+      <a href="#">Internship Program</a><br>
+      <a href="#">Café Roles</a><br>
+      <a href="#">Corporate Roles</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Social Impact</h3>
+      <a href="#">Sustainability</a><br>
+      <a href="#">Ethical Sourcing</a><br>
+      <a href="#">Community Initiatives</a><br>
+      <a href="#">Environmental Responsibility</a><br>
+      <a href="#">Diversity & Inclusion</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>For Business Partners</h3>
+      <a href="#">Wholesale Coffee</a><br>
+      <a href="#">Supplier Info</a><br>
+      <a href="#">Franchise Opportunities</a><br>
+      <a href="#">Corporate Orders</a><br>
+      <a href="#">Business Partnerships</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Order & Pick Up</h3>
+      <a href="#">Order Online</a><br>
+      <a href="#">Café Pickup</a><br>
+      <a href="#">Delivery Options</a><br>
+      <a href="#">Find a Store</a><br>
+      <a href="#">Gift Cards</a><br>
+    </div>
+  </div>
+  <hr>
+  <p>© 2025 Coffee Lovers Café | Brewed with ❤️ for coffee lovers</p>
+</footer></div> </div>
+<script>
+
+document.getElementById('myform').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let isvalide = true;
+    const rating = document.getElementsByName('rating');
+    let selectedRating = false;
+    for(let i = 0; i < rating.length; i++) {
+        if(rating[i].checked) {
+            selectedRating = true;
+            break;
+        }
+    }
+
+    if(!selectedRating) {
+        document.getElementById('feedback_e').style.display = "block";
+        document.getElementById('feedback_e').innerHTML = "Please rate us";
+        isvalide = false;
+    } else {
+        document.getElementById('feedback_e').style.display = "none";
+    }
+
+     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    let checkedCount = 0;
+    checkboxes.forEach(box => { if (box.checked) checkedCount++; });
+    if(checkedCount === 0) {
+        document.getElementById('like_e').style.display = "block";
+        document.getElementById('like_e').innerHTML = "Please select at least one thing you liked most";
+        isvalide = false;
+    } else {
+        document.getElementById('like_e').style.display = "none";
+    }
+
+    const texta = document.getElementById('texta').value.trim();
+if(texta === "") {
+    document.getElementById('texta_e').style.display = "block";
+    document.getElementById('texta_e').innerHTML = "Feedback cannot be empty";
+    isvalide = false;
+} else {
+    document.getElementById('texta_e').style.display = "none";
+}
+    
+    if(isvalide){
+        alert("Form successfully submitted");
+        event.target.reset();
+    }
+});
+
+</script>
+</body>
+</html>

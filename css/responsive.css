@@ -1,0 +1,79 @@
+/* Global responsive helpers */
+* { box-sizing: border-box; }
+img, video { max-width: 100%; height: auto; }
+
+/* Base tweaks that are safe for all sizes */
+body, html { width: 100%; overflow-x: hidden; }
+
+nav ul { flex-wrap: wrap; }
+
+/* Breakpoints */
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .logo { font-size: 24px; }
+  header { width: 100%; margin-left: 0; padding-left: 10px; padding-right: 10px; }
+  nav { padding: 10px; }
+  ul { margin-left: 0 !important; gap: 12px; }
+  .content h1 { font-size: 34px; padding-top: 80px; }
+  .buttons { padding-left: 10px; }
+  .menu-container { margin-left: 20px; margin-right: 20px; }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .bg-section { height: auto; min-height: 100vh; }
+
+  /* Header icons: space nicely on smaller screens */
+  .account-icon, .search-icon { top: 10px; width: 36px; height: 32px; }
+  .search-icon { right: 50px; }
+
+  nav { gap: 8px; }
+  ul { justify-content: center; gap: 10px; }
+  li, a { font-size: 18px; }
+
+  .content h1 { font-size: 28px; padding-top: 60px; padding-left: 12px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; padding-left: 12px; }
+  .btnnn { padding: 10px 18px; margin-right: 10px; }
+
+  .address { padding-top: 60px; max-width: 100%; padding-left: 12px; }
+
+  /* Cards and grids */
+  .container { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .product_cart { margin-left: 6px; margin-right: 6px; }
+  .sp_img { height: 220px; border-radius: 24px; }
+
+  /* Menu icons grid */
+  .con { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .product_image { margin-left: 0; padding: 10px; }
+  .menu-container { margin-left: 12px; margin-right: 12px; }
+
+  /* Forms */
+  .form-container { width: 90% !important; margin-left: auto !important; margin-right: auto !important; }
+  .btn { width: 100%; margin-left: 0; }
+
+  /* Single product */
+  .single { flex-direction: column; align-items: stretch; gap: 16px; height: auto; }
+  .single-img { height: auto; max-width: 100%; width: 100%; }
+  .single_info { width: 100%; height: auto; }
+
+  section { max-width: 100%; padding-left: 12px; padding-right: 12px; }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .logo { font-size: 20px; }
+  .emoji { font-size: 1.2rem; }
+  .tagline { font-size: 0.95rem; }
+
+  ul { gap: 8px; }
+  li, a { font-size: 16px; }
+
+  .content h1 { font-size: 24px; padding-top: 40px; }
+  .btnnn { padding: 10px 14px; font-size: 0.95rem; }
+
+  .sp_img { height: 180px; border-radius: 16px; }
+
+  /* Reduce header icon overlap on very small screens */
+  .account-icon { right: 8px; }
+  .search-icon { right: 50px; }
+}

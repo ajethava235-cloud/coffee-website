@@ -1,0 +1,312 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="../../css/style.css">
+        <title> Welcome to Cafinity</title>
+        <style>
+        
+/*body.dark-mode {
+  background-color: #634a06 !important;
+   color: #f2d5a6 !important; 
+}*/
+body.dark-mode .backg{
+  background-color: #1b1913 !important;
+  /* color: #f2d5a6 !important; */
+
+}
+body.dark-mode .card {
+  background-color:  #1b1913 !important;
+  /* color: #f2d5a6 !important; */
+}
+body.dark-mode .profile-sections {
+  background-color: #ecc681 !important;
+  /* color: #f2d5a6 !important; */
+}
+body.dark-mode .demo1,body.dark-mode .demo2,
+body.dark-mode .demo3,
+body.dark-mode .demo4{
+   color: black !important;
+}
+body.dark-mode .detail,
+body.dark-mode .section h3 {
+  background-color: #3a2c1a !important;
+  color: #f8eddd !important;
+}
+body.dark-mode button {
+  background-color: #3a2c1a !important;
+  color: #f2d5a6 !important;
+}
+body.dark-mode button:hover {
+  background-color: #232323 !important;
+  color: #fff3e0 !important;
+}
+
+    table {
+      width: 85%;
+      margin: 30px auto;
+      border-collapse: collapse;
+    }
+    td {
+      vertical-align: top;
+      padding: 20px;
+    }
+    .circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin-bottom: 10px;
+           
+    }
+       .circle img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    
+    .profile-sections {
+      background-color: #fff3e0;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .detail{
+        background-color:#f2d5a6;
+        color: black;
+    }
+    
+    #demo{
+      display: none;
+     
+    }
+    #demo1{
+      display: none;
+    }
+    #demo2{
+      display: none;
+    }
+    #demo3{
+      display: none;
+    }
+    #demo4{
+      display: none;
+    }
+    #demo5{
+      display: none;
+    }
+    .section h3{
+      background-color: #f2d5a6;
+      border-radius: 99px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .profile-sections hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
+    }
+     input{ 
+         border-radius: 50px;
+         background-color: rgba(236, 243, 243, 0.932);
+        color: black;
+        margin: 8px;
+         height: 20px;
+        float: right;
+        width: 200px;
+         padding: 20px;
+         font-size: medium;
+                }
+      button{
+        background-color: #f2d5a6;
+      }          
+      button:hover{
+        background-color: azure;
+        color: black;
+      }        
+    </style>
+   <script src="../../js/main.js"></script>
+
+    </head>
+    <body>
+        <div class="backg"> 
+            <header>
+                <a href="../../index.html"><span class="logo">Caffinity
+                <span class="emoji">🧋🤎
+                <span class="tagline">:- Coffees and more</span> </span></span></a>
+            <a href="myaccount.html" class="account-icon">
+  <img src="../../images/prof.png">
+</a>
+ <div class="search-icon" onclick="search()">
+  <img src="../../images/searchicon.png">
+</div>
+</header>
+<div class="card">
+<div id="demo5">
+     <input type="name" placeholder="search"></h2>
+  </div>
+                <main>
+            <table>
+                <tr>
+                  <td rowspan="6">
+                    <div class="product_image"><div class="circle"><img src="../../images/prof.png">
+                 </div> </div>
+      <td class="profile-sections">
+        <div class="detail">
+          </div>
+           <div class="section" onclick="display()">
+          <h3> 👤Account Details</h3>
+        </div>
+        <div id="demo">
+          <b> Full name:</b> <i> Akshara jethava</i> <br> <br>
+                        <b>Email :</b> <i> ajethava235@rku.ac.in</i> <br> <br>
+                        <b> Phone number:</b> <i>7990132022</i> <br> <br>
+                        <b> Gender</b> <i> Female</i><br> <br>
+                        <b> D.O.B</b> <i>2-2-2009</i><br>
+                        <br> 
+                      </div>
+         <div class="section" onclick="settings()">
+            <h3> ⚙️ Settings</h3>
+          </div> 
+           <div id="demo1">
+                <b>🧑‍💼 Account Settings:</b><br> <br>
+                   Edit profile (Name, Email, Phone) <hr><br>
+                    Change password <hr><br>
+                    Manage delivery addresses<hr><br>
+                    Delete or deactivate account<hr>
+                 <b> 🎨 Appearance / Theme</b> <br> <br>
+
+                <button onclick="dark_mode()"> Dark mode</button>
+                <button onclick="light_mode()"> Light mode</button> 
+                <br> <br>
+
+                 <b>🔔 Notifications</b> <br><br>
+                 <b> 🌍 Language & Region</b><br>
+                      </div>
+                      
+        <div class="section" onclick="myactivity()">
+            <h3> 🌸 MY ACTIVITY </h3>
+          </div>
+           <div id="demo2"> <b> 🛒My cart</b><br> <br>
+                            <b> ♥️ Favorite Items </b> <br> <br>
+                            <b>🛍️ My orders</b> <br> <br>
+                            <b> 📍 Track my order </b> <br> <br>
+                            <b>🧾 Order History</b>
+                      </div>
+
+          <div class="section" onclick="privacy()">
+            <h3> 🧾 Privacy & policy</h3>
+  
+          </div>
+          <div id="demo3"><b> 1. Information We Collect: </b><br>
+
+Name, email, contact number <br>
+
+Delivery address for online orders <br>
+
+Preferences <hr>
+
+<b>2. How We Use Your Information: </b><br>
+
+To process and deliver your orders<br>
+
+To personalize your coffee experience <br>
+
+To send updates, offers, or event invitations <hr>
+
+<b>3. Data Security: </b><br>
+
+We use encryption and secure servers to protect your personal data <br>
+
+No payment details are stored on our website <hr>
+
+<b>4. Cookies and Tracking: </b><br>
+
+We use cookies to enhance your browsing experience<br>
+
+Cookies help us remember your preferences and order history<hr>
+
+<b>5. User Rights: </b><br>
+
+You can update or delete your account anytime<br>
+
+You can opt out of promotional emails with one click<br>
+                      </div>
+          <div class="section" onclick="payments()">
+            <h3>💰 My payements</h3> 
+          </div>
+            <div id="demo4">
+                     <b> 🗂️ My wallet</b> <br> <br>
+                     <b> 💰 Bank & UPI details</b> <br> <br>
+                    <b> 💳 Payment & refund</b>
+                      </div>
+      </td>
+    </tr>
+            </table>
+        </main>
+    <br><br><br><br><br><br><br><br><br><br>
+<footer>
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <a href="pages/info/Aboutus.html">Our Story</a><br>
+      <a href="pages/info/Aboutus.html">Our Coffee</a><br>
+      <a href="pages/info/Aboutus.html">Community</a><br>
+      <a href="pages/info/Aboutus.html">Customer Support</a><br>
+      <a href="pages/info/Aboutus.html">Contact Us</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="#">Work Culture</a><br>
+      <a href="#">Join Our Team</a><br>
+      <a href="#">Internship Program</a><br>
+      <a href="#">Café Roles</a><br>
+      <a href="#">Corporate Roles</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Social Impact</h3>
+      <a href="#">Sustainability</a><br>
+      <a href="#">Ethical Sourcing</a><br>
+      <a href="#">Community Initiatives</a><br>
+      <a href="#">Environmental Responsibility</a><br>
+      <a href="#">Diversity & Inclusion</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>For Business Partners</h3>
+      <a href="#">Wholesale Coffee</a><br>
+      <a href="#">Supplier Info</a><br>
+      <a href="#">Franchise Opportunities</a><br>
+      <a href="#">Corporate Orders</a><br>
+      <a href="#">Business Partnerships</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Order & Pick Up</h3>
+      <a href="#">Order Online</a><br>
+      <a href="#">Café Pickup</a><br>
+      <a href="#">Delivery Options</a><br>
+      <a href="#">Find a Store</a><br>
+      <a href="#">Gift Cards</a><br>
+    </div>
+  </div>
+  <hr>
+  <p>© 2025 Coffee Lovers Café | Brewed with ❤️ for coffee lovers</p>
+</footer></div>
+</div>
+</body>
+</html>

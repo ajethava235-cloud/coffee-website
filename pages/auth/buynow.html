@@ -1,0 +1,323 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .singleimg {
+            height: 300px;
+            max-width: 450px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        h2 { margin-left: 1px; }
+        .formcontainer {
+            background-color: #f9e4c8;
+            padding: 10px 5px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 790px;
+            margin-left: 1%;
+            position: relative;
+            z-index: 10;
+        }
+        .formcontainer h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4b2e2e;
+        }
+        .formcontainer input[type="text"],
+        .formcontainer input[type="email"],
+        .formcontainer input[type="number"],
+        .formcontainer input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #a1775e;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        .formcontainer select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #a1775e;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: white;
+            cursor: pointer;
+            box-sizing: border-box;
+            appearance: auto;
+            -webkit-appearance: menulist;
+            -moz-appearance: menulist;
+        }
+        .formcontainer label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #4b2e2e;
+        }
+        .formcontainer p {
+            text-align: left;
+            margin: 10px 0;
+            color: #4b2e2e;
+        }
+        section p {
+            text-align: left;
+            margin: 10px 0;
+        }
+        section {
+            position: relative;
+            z-index: 5;
+        }
+        .btne{
+            margin-top: 30px;
+            width: 40%;
+            height: 50px;
+            background-color:#6b4f37;
+            color: white;
+            padding: 1%;
+            margin-left: 230px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btne:hover {
+            background-color: #dbb992;
+            color: black;
+        }
+        /* input {
+            border-radius: 50px;
+            background-color: rgba(236, 243, 243, 0.932);
+            color: black;
+            margin: 8px;
+            height: 20px;
+            float: right;
+            width: 200px;
+            padding: 20px;
+            font-size: medium;
+        } */
+    </style>
+</head>
+<body>
+    <div class="backg">
+        <header>
+            <a href="../../pages/account/myaccount.html" class="account-icon">
+                <img src="../../images/prof.png" alt="Profile">
+            </a>
+            <a href="../../index.html" class="logo">
+                <span>Caffinity</span>
+                <span class="emoji">🧋🤎</span>
+                <span class="tagline"> > Buy now</span>
+            </a>
+            <div class="search-icon" onclick="search()">
+                <img src="../../images/searchicon.png" alt="Search">
+            </div>
+        </header>
+
+        <div class="card">
+            <div id="demo5">
+                <input type="name" placeholder="search">
+            </div> <br><br>
+            <div class="single"> 
+                <section>
+
+                    <img src="../../images/oreocoffee.png" alt="Oreo Coffee" class="singleimg"> 
+                    <br><br>
+                    <h2>Oreo Cappuccino</h2>
+                    <p style="color: brown; font-size: 25px;">₹480 <span class="old-price"><del>₹500 </del></span></p>
+                    <p>Quantity: <input type="number" value="1" style="width:80px; float:initial;"></p>
+                </section>
+                <div class="formcontainer">
+                    <h2 style="background-color:#d5a675; border-radius: 90px;"> Customer details</h2>
+                   <form id="myform">
+    
+      <label>Full Name:</label>
+      <input type="text" id="fullname" placeholder="Enter your name" name="fullname">
+       <div id="fullname_e" style="color: red;font-weight: bold;"></div>
+
+    <label for="number">Phone Number:</label>
+    <input type="number" id="number" placeholder="Enter phone number">
+    <div id="number_e" style="color: red;font-weight: bold;"></div>
+
+     <label>Email:</label>
+      <input type="email" id="email" placeholder="Enter email" name="email">
+      <div id="email_e" style="color: red;font-weight: bold;"></div>
+
+    <label>Delivery Address</label>
+   <input type="text" id="address" placeholder="Enter address" name="address">
+      <div id="address_e" style="color: red;font-weight: bold;"></div>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" name="payment" onchange="console.log('Payment method selected:', this.value)">
+        <option value="">Select Payment</option>
+        <option value="upi">UPI / QR Code</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="cod">Cash on Delivery</option>
+    </select>
+    <div id="payment_e" style="color: red;font-weight: bold;"></div>
+
+   <button class="btne" type="submit" onclick="console.log('Button clicked')"> Place order </button>
+</form>
+</div>
+</div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <a href="pages/info/Aboutus.html">Our Story</a><br>
+      <a href="pages/info/Aboutus.html">Our Coffee</a><br>
+      <a href="pages/info/Aboutus.html">Community</a><br>
+      <a href="pages/info/Aboutus.html">Customer Support</a><br>
+      <a href="pages/info/Aboutus.html">Contact Us</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="#">Work Culture</a><br>
+      <a href="#">Join Our Team</a><br>
+      <a href="#">Internship Program</a><br>
+      <a href="#">Café Roles</a><br>
+      <a href="#">Corporate Roles</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Social Impact</h3>
+      <a href="#">Sustainability</a><br>
+      <a href="#">Ethical Sourcing</a><br>
+      <a href="#">Community Initiatives</a><br>
+      <a href="#">Environmental Responsibility</a><br>
+      <a href="#">Diversity & Inclusion</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>For Business Partners</h3>
+      <a href="#">Wholesale Coffee</a><br>
+      <a href="#">Supplier Info</a><br>
+      <a href="#">Franchise Opportunities</a><br>
+      <a href="#">Corporate Orders</a><br>
+      <a href="#">Business Partnerships</a><br>
+    </div>
+
+    <div class="footer-col">
+      <h3>Order & Pick Up</h3>
+      <a href="#">Order Online</a><br>
+      <a href="#">Café Pickup</a><br>
+      <a href="#">Delivery Options</a><br>
+      <a href="#">Find a Store</a><br>
+      <a href="#">Gift Cards</a><br>
+    </div>
+  </div>
+  <hr>
+  <p>© 2025 Coffee Lovers Café | Brewed with ❤️ for coffee lovers</p>
+</footer>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('myform');
+    if (!form) {
+        console.error('Form not found!');
+        return;
+    }
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log('Form submitted');
+
+        let isvalide = true;
+
+    const fullname = document.getElementById('fullname').value.trim();
+    let f_length = fullname.length;
+    const name_regex = /^[A-Za-z]+$/;
+    if (fullname == "") {
+        document.getElementById('fullname_e').style.display = "block";
+        document.getElementById('fullname_e').innerHTML = "Full name is required";
+        isvalide = false;
+    }
+    else if (f_length < 2 || f_length > 50) {
+        document.getElementById('fullname_e').style.display = "block";
+        document.getElementById('fullname_e').innerHTML = "full name must be between 2 to 50 characters";
+        isvalide = false;
+    }
+    else if (!name_regex.test(fullname)) {
+        document.getElementById('fullname_e').style.display = "block";
+        document.getElementById('fullname_e').innerHTML = "fullname must contain only letters";
+        isvalide = false;
+    }
+    else {
+        document.getElementById('fullname_e').style.display = "none";
+    }
+
+    const number = document.getElementById('number').value.trim();
+    const number_regex = /^[0-9]{10}$/;
+    if(number == ""){
+        document.getElementById('number_e').style.display = "block";
+        document.getElementById('number_e').innerHTML = "Phone number is required";
+        isvalide = false;
+    }   
+    else if(!number_regex.test(number)){
+        document.getElementById('number_e').style.display = "block";
+        document.getElementById('number_e').innerHTML = "Phone number must be of 10 digits";
+        isvalide = false;
+    } 
+
+    else{
+        document.getElementById('number_e').style.display = "none";
+    } 
+
+    const email = document.getElementById('email').value.trim();
+    const email_regex = /^[a-z0-9.]+@[a-z.]+\.[a-z]{2,}$/;
+    if (email == "") {
+        document.getElementById('email_e').style.display = "block";
+        document.getElementById('email_e').innerHTML = "email is required";
+        isvalide = false;
+    }
+    else if (!email_regex.test(email)) {
+        document.getElementById('email_e').style.display = "block";
+        document.getElementById('email_e').innerHTML = "email format is incorrect";
+        isvalide = false;
+    }
+    else {
+        document.getElementById('email_e').style.display = "none";
+    }
+
+  const payment = document.getElementById('payment').value;
+if (payment === "") {
+    document.getElementById('payment_e').style.display = "block";
+    document.getElementById('payment_e').innerHTML = "Please select a payment method";
+    isvalide = false;
+} else {
+    document.getElementById('payment_e').style.display = "none";
+}
+
+ const address = document.getElementById('address').value.trim();
+    let a_length = address.length;
+    if (address == "") {
+        document.getElementById('address_e').style.display = "block";
+        document.getElementById('address_e').innerHTML = "Address is required";
+        isvalide = false;
+    }
+    else if (a_length < 2 || a_length > 50) {
+        document.getElementById('address_e').style.display = "block";
+        document.getElementById('address_e').innerHTML = "Address must be between 2 to 50 characters";
+        isvalide = false;
+    }
+    else {
+        document.getElementById('address_e').style.display = "none";
+    }
+
+
+if (isvalide) {
+    alert("Order placed successfully ✅");
+    document.getElementById('myform').reset();
+}
+    });
+});
+</script>
+</body>
+</html>

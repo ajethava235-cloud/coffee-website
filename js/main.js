@@ -12,14 +12,12 @@
         details.style.display = "none";   // Hide
     }
       }
-
       function dark_mode() {
   document.body.classList.add('dark-mode');
 }
 function light_mode() {
   document.body.classList.remove('dark-mode');
 }
-
       function settings()
       {
         /*document.getElementById('demo1').style.display="block";*/

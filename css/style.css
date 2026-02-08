@@ -128,7 +128,6 @@ ul{
 a{
     color: rgb(43, 20, 2);
     text-decoration: none;
-
       white-space: nowrap;   /* 🔥 stops line break */
     /* text-decoration: none; */
     font-weight: 600;
